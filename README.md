@@ -1,4 +1,0 @@
-# Fasal
-
-abcd
-bvm\
