@@ -2,7 +2,7 @@
 /* Add a black background color to the top navigation */
 body{
   margin: 0px;
-  background-image: linear-gradient(to bottom left,#b3ff99,#ffffcc);
+  background-image: linear-gradient(to bottom left,#adebad,#ffffcc);
   
 }
 .topnav { 
