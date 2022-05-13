@@ -2,6 +2,7 @@
 /* Add a black background color to the top navigation */
 body{
     margin: 0px;
+    background-image: linear-gradient(to bottom left,#adebad,#ffffcc);
 }
 .topnav { 
     background-color: rgba(85, 158, 52, 0.904);
@@ -54,4 +55,73 @@ body{
   }
 
   /* Navigation */
+
+
+  /* Layout */
+
+  /* Column 1*/
+
+  .s1 {
+    margin: 40px 60px;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+
+  .s2{
+    border-style: solid;
+    border-radius: 30px ;
+    background-color: rgba(38, 165, 102, 0.953);
+  }
+
+  .s4{
+    border-color: black;
+    border-radius: 25px;
+  }
+
+  .s4 tr{
+    background-color: rgb(50, 205, 161);
+    padding: 0px;
+    size: 40px;
+    border-color: #0eb6b6;
+    border-bottom: 4px solid black;
+  }
+  .s4 th {
+    align-content: center;
+    padding-left: auto;
+    padding-right: auto;
+    background-color: rgb(28, 128, 28);
+  }
+  .s4 td {
+    align-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  /*column 1 end*/
+
+
+  /* column 3 start*/
+  .b {
+    border: solid black;
+    background: #3399ff;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 5px;
+    overflow: hidden;
+  }
+  .b li{
+    border: solid black;
+    background: rgb(28, 128, 28);
+    margin: 5px;
+    border-radius: 2px;
+  }
+
+  .b li:hover{
+    background: whitesmoke;
+  }
+  .b a{
+    text-decoration: none;
+    color: black;
+  }
+
+  /* column 3 end*/
+  /* Layout */
   
