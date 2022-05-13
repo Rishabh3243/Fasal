@@ -77,6 +77,16 @@ body{
     border-radius: 25px;
   }
 
+  .s2 a{
+    text-decoration: none;
+    color: black;
+  }
+
+  .s2 a:hover{
+    text-decoration: none;
+    color: black; 
+  }
+
   .s4 tr{
     background-color: rgb(50, 205, 161);
     padding: 0px;
