@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<title>blog page</title>
+<style>
+/* image */
+div {
+width:1000px;
+border:2px solid black;
+margin:0 auto;
+}
+img {
+width:100%;
+height:200px;
+}
+ .row
+{
+width:990px;
+height:80px;
+background-color:lightgray;
+padding:5px;
+border:2px solid black;
+margin:0 auto;
+       
+       
+}
+
+/* content box */
+.filterDiv {
+  float: centre;
+  background-color: lightgreen;
+  color: black;
+  width: 600px;
+  line-height: 300px;
+  text-align: center;
+  margin-left: 200px;
+  display: none;
+  border: solid green 2px;
+  position: relative;
+  box-shadow: 3px 3px 3px 3px lightgray;
+  font-size: 20px;
+}
+
+.show {
+  display: block;
+}
+
+.container {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+/* Style the buttons */
+.btn {
+  border: solid black 2px;
+  outline: none;
+  padding: 50px 40px;
+  background-color: lightyellow;
+  cursor: pointer;
+  margin-top: 100px;
+  margin-left: 105px;
+  box-shadow: 2px 2px 2px 2px lightgray ;
+  position: relative;
+  border-radius: 20px;
+  font-family: "Times New Roman";
+  font-size: 20px;
+
+}
+
+.btn:hover {
+  background-color: lightblue;
+}
+
+.btn.active {
+  background-color: #666;
+  color: lightblue;
+}
+</style>
+<body>
+
+<div class="hd">
+<img class="hi" src="https://thumbs.dreamstime.com/b/blog-information-website-concept-workplace-background-text-view-above-127465079.jpg" alt="blogs image">
+</div>
+<div class ="row">
+<h style="font-size:16">Blogs</h>
+<p>You can write your blogs here with the help of references of other's blogs.This will help you to sell your products more effectively.</p>
+</div>
+
+
+<div id="myBtnContainer" class="hd">
+ 
+  <button class="btn" onclick="filterSelection('part1')"> Other's blogs</button>
+  <button class="btn" onclick="filterSelection('part2')"> create a blog</button>
+  <button class="btn" onclick="filterSelection('part3')"> starred blogs</button>
+</div>
+
+<div class="container">
+  <div class="filterDiv part1">1...</div>
+  <div class="filterDiv part2">2...</div>
+  <div class="filterDiv part3">3....</div>
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);    
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</body>
+</html>
