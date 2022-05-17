@@ -1,0 +1,154 @@
+/* Navigation */
+/* Add a black background color to the top navigation */
+body{
+    margin: 0px;
+    background-image: linear-gradient(to bottom left,#adebad,#ffffcc);
+}
+.topnav { 
+    background-color: rgba(85, 158, 52, 0.904);
+  }
+  .f{
+    float: left;
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    margin: 10px;
+  }
+  /* Drop down list */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    align-items: center;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:rgba(85, 158, 52, 0.904);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+ 
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #fff7f7;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: rgba(85, 158, 52, 0.904);
+    color:rgba(20, 82, 241, 0.796);
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color:rgba(85, 158, 52, 0.904);
+    color:rgba(20, 82, 241, 0.796);
+  }
+
+  /* Navigation */
+
+
+  /* Layout */
+
+  /* Column 1*/
+
+  .s1 {
+    margin: 40px 60px;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+
+  .s2{
+    border-style: solid;
+    border-radius: 30px ;
+    background-color: rgba(38, 165, 102, 0.953);
+    font-size: 1.5rem;
+  }
+
+  .s4{
+    border-color: black;
+    border-radius: 25px;
+  }
+
+  .s2 a{
+    text-decoration: none;
+    color: black;
+  }
+
+  .s2 a:hover{
+    text-decoration: none;
+    color: black; 
+  }
+
+  .s4 tr{
+    background-color: rgb(50, 205, 161);
+    padding: 0px;
+    size: 40px;
+    border-color: #0eb6b6;
+    border-bottom: 4px solid black;
+  }
+  .s4 th {
+    align-content: center;
+    padding-left: auto;
+    padding-right: auto;
+    background-color: rgb(28, 128, 28);
+  }
+  .s4 td {
+    align-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  /*column 1 end*/
+
+
+  /* column 3 start*/
+  .b {
+    border: solid black;
+    background: #3399ff;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 5px;
+    overflow: hidden;
+  }
+  .b li{
+    border: solid black;
+    background: rgb(28, 128, 28);
+    margin: 5px;
+    border-radius: 2px;
+  }
+
+  .b li:hover{
+    background: whitesmoke;
+  }
+  .b a{
+    text-decoration: none;
+    color: black;
+  }
+
+  /* column 3 end*/
+  /* Layout */
+
+
+  /* column 2 */
+
+  /* section sec1 */
+
+  .img{
+
+    border-radius: 2rem;
+  }
+
+  .sec1{
+
+    font-size: 1.3rem;
+    color: black;
+  }
+  
